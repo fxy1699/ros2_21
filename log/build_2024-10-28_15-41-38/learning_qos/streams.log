@@ -1,0 +1,41 @@
+[1.589s] Invoking command in '/home/moon/project/ros2_21/learning_qos': PYTHONPATH=/home/moon/project/ros2_21/build/learning_qos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_qos build --build-base /home/moon/project/ros2_21/build/learning_qos/build install --record /home/moon/project/ros2_21/build/learning_qos/install.log --single-version-externally-managed install_data
+[1.810s] running egg_info
+[1.810s] creating ../build/learning_qos/learning_qos.egg-info
+[1.825s] writing ../build/learning_qos/learning_qos.egg-info/PKG-INFO
+[1.826s] writing dependency_links to ../build/learning_qos/learning_qos.egg-info/dependency_links.txt
+[1.826s] writing entry points to ../build/learning_qos/learning_qos.egg-info/entry_points.txt
+[1.827s] writing requirements to ../build/learning_qos/learning_qos.egg-info/requires.txt
+[1.827s] writing top-level names to ../build/learning_qos/learning_qos.egg-info/top_level.txt
+[1.827s] writing manifest file '../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[1.860s] reading manifest file '../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[1.860s] writing manifest file '../build/learning_qos/learning_qos.egg-info/SOURCES.txt'
+[1.861s] running build
+[1.861s] running build_py
+[1.861s] creating /home/moon/project/ros2_21/build/learning_qos/build
+[1.862s] creating /home/moon/project/ros2_21/build/learning_qos/build/lib
+[1.862s] creating /home/moon/project/ros2_21/build/learning_qos/build/lib/learning_qos
+[1.862s] copying learning_qos/qos_helloworld_sub.py -> /home/moon/project/ros2_21/build/learning_qos/build/lib/learning_qos
+[1.863s] copying learning_qos/qos_helloworld_pub.py -> /home/moon/project/ros2_21/build/learning_qos/build/lib/learning_qos
+[1.864s] copying learning_qos/__init__.py -> /home/moon/project/ros2_21/build/learning_qos/build/lib/learning_qos
+[1.864s] running install
+[1.871s] running install_lib
+[1.889s] creating /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[1.889s] copying /home/moon/project/ros2_21/build/learning_qos/build/lib/learning_qos/qos_helloworld_sub.py -> /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[1.889s] copying /home/moon/project/ros2_21/build/learning_qos/build/lib/learning_qos/qos_helloworld_pub.py -> /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[1.890s] copying /home/moon/project/ros2_21/build/learning_qos/build/lib/learning_qos/__init__.py -> /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos
+[1.890s] byte-compiling /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos/qos_helloworld_sub.py to qos_helloworld_sub.cpython-310.pyc
+[1.891s] byte-compiling /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos/qos_helloworld_pub.py to qos_helloworld_pub.cpython-310.pyc
+[1.892s] byte-compiling /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos/__init__.py to __init__.cpython-310.pyc
+[1.892s] running install_data
+[1.892s] creating /home/moon/project/ros2_21/install/learning_qos/share/ament_index
+[1.892s] creating /home/moon/project/ros2_21/install/learning_qos/share/ament_index/resource_index
+[1.892s] creating /home/moon/project/ros2_21/install/learning_qos/share/ament_index/resource_index/packages
+[1.892s] copying resource/learning_qos -> /home/moon/project/ros2_21/install/learning_qos/share/ament_index/resource_index/packages
+[1.892s] copying package.xml -> /home/moon/project/ros2_21/install/learning_qos/share/learning_qos
+[1.892s] running install_egg_info
+[1.911s] Copying ../build/learning_qos/learning_qos.egg-info to /home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages/learning_qos-0.0.0-py3.10.egg-info
+[1.911s] running install_scripts
+[2.054s] Installing qos_helloworld_pub script to /home/moon/project/ros2_21/install/learning_qos/lib/learning_qos
+[2.054s] Installing qos_helloworld_sub script to /home/moon/project/ros2_21/install/learning_qos/lib/learning_qos
+[2.055s] writing list of installed files to '/home/moon/project/ros2_21/build/learning_qos/install.log'
+[2.103s] Invoked command in '/home/moon/project/ros2_21/learning_qos' returned '0': PYTHONPATH=/home/moon/project/ros2_21/build/learning_qos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_qos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_qos build --build-base /home/moon/project/ros2_21/build/learning_qos/build install --record /home/moon/project/ros2_21/build/learning_qos/install.log --single-version-externally-managed install_data

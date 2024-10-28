@@ -1,0 +1,49 @@
+[0.746s] Invoking command in '/home/moon/project/ros2_21/learning_service': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/build/learning_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages:/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_service build --build-base /home/moon/project/ros2_21/build/learning_service/build install --record /home/moon/project/ros2_21/build/learning_service/install.log --single-version-externally-managed install_data
+[0.884s] running egg_info
+[0.884s] creating ../build/learning_service/learning_service.egg-info
+[0.895s] writing ../build/learning_service/learning_service.egg-info/PKG-INFO
+[0.896s] writing dependency_links to ../build/learning_service/learning_service.egg-info/dependency_links.txt
+[0.896s] writing entry points to ../build/learning_service/learning_service.egg-info/entry_points.txt
+[0.896s] writing requirements to ../build/learning_service/learning_service.egg-info/requires.txt
+[0.896s] writing top-level names to ../build/learning_service/learning_service.egg-info/top_level.txt
+[0.896s] writing manifest file '../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[0.915s] reading manifest file '../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[0.916s] writing manifest file '../build/learning_service/learning_service.egg-info/SOURCES.txt'
+[0.916s] running build
+[0.916s] running build_py
+[0.916s] creating /home/moon/project/ros2_21/build/learning_service/build
+[0.916s] creating /home/moon/project/ros2_21/build/learning_service/build/lib
+[0.916s] creating /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service
+[0.916s] copying learning_service/service_adder_client.py -> /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service
+[0.916s] copying learning_service/service_object_client.py -> /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service
+[0.916s] copying learning_service/__init__.py -> /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service
+[0.916s] copying learning_service/service_object_server.py -> /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service
+[0.916s] copying learning_service/service_adder_server.py -> /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service
+[0.917s] running install
+[0.920s] running install_lib
+[0.932s] creating /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service
+[0.932s] copying /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service/service_adder_client.py -> /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service
+[0.932s] copying /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service/service_object_client.py -> /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service
+[0.932s] copying /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service/__init__.py -> /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service
+[0.932s] copying /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service/service_object_server.py -> /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service
+[0.932s] copying /home/moon/project/ros2_21/build/learning_service/build/lib/learning_service/service_adder_server.py -> /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service
+[0.933s] byte-compiling /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service/service_adder_client.py to service_adder_client.cpython-310.pyc
+[0.933s] byte-compiling /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service/service_object_client.py to service_object_client.cpython-310.pyc
+[0.933s] byte-compiling /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service/__init__.py to __init__.cpython-310.pyc
+[0.933s] byte-compiling /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service/service_object_server.py to service_object_server.cpython-310.pyc
+[0.934s] byte-compiling /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service/service_adder_server.py to service_adder_server.cpython-310.pyc
+[0.934s] running install_data
+[0.934s] creating /home/moon/project/ros2_21/install/learning_service/share/ament_index
+[0.934s] creating /home/moon/project/ros2_21/install/learning_service/share/ament_index/resource_index
+[0.934s] creating /home/moon/project/ros2_21/install/learning_service/share/ament_index/resource_index/packages
+[0.934s] copying resource/learning_service -> /home/moon/project/ros2_21/install/learning_service/share/ament_index/resource_index/packages
+[0.934s] copying package.xml -> /home/moon/project/ros2_21/install/learning_service/share/learning_service
+[0.935s] running install_egg_info
+[0.944s] Copying ../build/learning_service/learning_service.egg-info to /home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages/learning_service-0.0.0-py3.10.egg-info
+[0.945s] running install_scripts
+[1.023s] Installing service_adder_client script to /home/moon/project/ros2_21/install/learning_service/lib/learning_service
+[1.023s] Installing service_adder_server script to /home/moon/project/ros2_21/install/learning_service/lib/learning_service
+[1.023s] Installing service_object_client script to /home/moon/project/ros2_21/install/learning_service/lib/learning_service
+[1.023s] Installing service_object_server script to /home/moon/project/ros2_21/install/learning_service/lib/learning_service
+[1.024s] writing list of installed files to '/home/moon/project/ros2_21/build/learning_service/install.log'
+[1.052s] Invoked command in '/home/moon/project/ros2_21/learning_service' returned '0': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/build/learning_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_service/lib/python3.10/site-packages:/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_service build --build-base /home/moon/project/ros2_21/build/learning_service/build install --record /home/moon/project/ros2_21/build/learning_service/install.log --single-version-externally-managed install_data

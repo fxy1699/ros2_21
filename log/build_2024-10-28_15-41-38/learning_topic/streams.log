@@ -1,0 +1,57 @@
+[0.731s] Invoking command in '/home/moon/project/ros2_21/learning_topic': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/build/learning_topic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages:/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_topic build --build-base /home/moon/project/ros2_21/build/learning_topic/build install --record /home/moon/project/ros2_21/build/learning_topic/install.log --single-version-externally-managed install_data
+[0.869s] running egg_info
+[0.869s] creating ../build/learning_topic/learning_topic.egg-info
+[0.877s] writing ../build/learning_topic/learning_topic.egg-info/PKG-INFO
+[0.878s] writing dependency_links to ../build/learning_topic/learning_topic.egg-info/dependency_links.txt
+[0.878s] writing entry points to ../build/learning_topic/learning_topic.egg-info/entry_points.txt
+[0.878s] writing requirements to ../build/learning_topic/learning_topic.egg-info/requires.txt
+[0.878s] writing top-level names to ../build/learning_topic/learning_topic.egg-info/top_level.txt
+[0.878s] writing manifest file '../build/learning_topic/learning_topic.egg-info/SOURCES.txt'
+[0.900s] reading manifest file '../build/learning_topic/learning_topic.egg-info/SOURCES.txt'
+[0.900s] writing manifest file '../build/learning_topic/learning_topic.egg-info/SOURCES.txt'
+[0.900s] running build
+[0.900s] running build_py
+[0.900s] creating /home/moon/project/ros2_21/build/learning_topic/build
+[0.900s] creating /home/moon/project/ros2_21/build/learning_topic/build/lib
+[0.901s] creating /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] copying learning_topic/interface_object_pub.py -> /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] copying learning_topic/topic_helloworld_pub.py -> /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] copying learning_topic/topic_helloworld_sub.py -> /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] copying learning_topic/interface_object_sub.py -> /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] copying learning_topic/topic_webcam_pub.py -> /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] copying learning_topic/__init__.py -> /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] copying learning_topic/topic_webcam_sub.py -> /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic
+[0.901s] running install
+[0.905s] running install_lib
+[0.914s] creating /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.914s] copying /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic/interface_object_pub.py -> /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.914s] copying /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic/topic_helloworld_pub.py -> /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.914s] copying /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic/topic_helloworld_sub.py -> /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.914s] copying /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic/interface_object_sub.py -> /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.915s] copying /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic/topic_webcam_pub.py -> /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.915s] copying /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic/__init__.py -> /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.915s] copying /home/moon/project/ros2_21/build/learning_topic/build/lib/learning_topic/topic_webcam_sub.py -> /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic
+[0.915s] byte-compiling /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic/interface_object_pub.py to interface_object_pub.cpython-310.pyc
+[0.916s] byte-compiling /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic/topic_helloworld_pub.py to topic_helloworld_pub.cpython-310.pyc
+[0.916s] byte-compiling /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic/topic_helloworld_sub.py to topic_helloworld_sub.cpython-310.pyc
+[0.916s] byte-compiling /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic/interface_object_sub.py to interface_object_sub.cpython-310.pyc
+[0.916s] byte-compiling /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic/topic_webcam_pub.py to topic_webcam_pub.cpython-310.pyc
+[0.917s] byte-compiling /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic/__init__.py to __init__.cpython-310.pyc
+[0.917s] byte-compiling /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic/topic_webcam_sub.py to topic_webcam_sub.cpython-310.pyc
+[0.917s] running install_data
+[0.917s] creating /home/moon/project/ros2_21/install/learning_topic/share/ament_index
+[0.917s] creating /home/moon/project/ros2_21/install/learning_topic/share/ament_index/resource_index
+[0.917s] creating /home/moon/project/ros2_21/install/learning_topic/share/ament_index/resource_index/packages
+[0.917s] copying resource/learning_topic -> /home/moon/project/ros2_21/install/learning_topic/share/ament_index/resource_index/packages
+[0.917s] copying package.xml -> /home/moon/project/ros2_21/install/learning_topic/share/learning_topic
+[0.917s] running install_egg_info
+[0.927s] Copying ../build/learning_topic/learning_topic.egg-info to /home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages/learning_topic-0.0.0-py3.10.egg-info
+[0.928s] running install_scripts
+[1.007s] Installing interface_object_pub script to /home/moon/project/ros2_21/install/learning_topic/lib/learning_topic
+[1.007s] Installing interface_object_sub script to /home/moon/project/ros2_21/install/learning_topic/lib/learning_topic
+[1.007s] Installing topic_helloworld_pub script to /home/moon/project/ros2_21/install/learning_topic/lib/learning_topic
+[1.007s] Installing topic_helloworld_sub script to /home/moon/project/ros2_21/install/learning_topic/lib/learning_topic
+[1.007s] Installing topic_webcam_pub script to /home/moon/project/ros2_21/install/learning_topic/lib/learning_topic
+[1.007s] Installing topic_webcam_sub script to /home/moon/project/ros2_21/install/learning_topic/lib/learning_topic
+[1.007s] writing list of installed files to '/home/moon/project/ros2_21/build/learning_topic/install.log'
+[1.036s] Invoked command in '/home/moon/project/ros2_21/learning_topic' returned '0': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/build/learning_topic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_topic/lib/python3.10/site-packages:/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_topic build --build-base /home/moon/project/ros2_21/build/learning_topic/build install --record /home/moon/project/ros2_21/build/learning_topic/install.log --single-version-externally-managed install_data

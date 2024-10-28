@@ -1,0 +1,44 @@
+[1.729s] Invoking command in '/home/moon/project/ros2_21/learning_launch': PYTHONPATH=/home/moon/project/ros2_21/build/learning_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_launch build --build-base /home/moon/project/ros2_21/build/learning_launch/build install --record /home/moon/project/ros2_21/build/learning_launch/install.log --single-version-externally-managed install_data
+[1.969s] running egg_info
+[1.969s] creating ../build/learning_launch/learning_launch.egg-info
+[1.982s] writing ../build/learning_launch/learning_launch.egg-info/PKG-INFO
+[1.984s] writing dependency_links to ../build/learning_launch/learning_launch.egg-info/dependency_links.txt
+[1.984s] writing requirements to ../build/learning_launch/learning_launch.egg-info/requires.txt
+[1.984s] writing top-level names to ../build/learning_launch/learning_launch.egg-info/top_level.txt
+[1.984s] writing manifest file '../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[2.014s] reading manifest file '../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[2.015s] writing manifest file '../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[2.015s] running build
+[2.015s] running build_py
+[2.016s] creating /home/moon/project/ros2_21/build/learning_launch/build
+[2.016s] creating /home/moon/project/ros2_21/build/learning_launch/build/lib
+[2.016s] creating /home/moon/project/ros2_21/build/learning_launch/build/lib/learning_launch
+[2.016s] copying learning_launch/__init__.py -> /home/moon/project/ros2_21/build/learning_launch/build/lib/learning_launch
+[2.017s] running install
+[2.026s] running install_lib
+[2.040s] creating /home/moon/project/ros2_21/install/learning_launch/lib/python3.10/site-packages/learning_launch
+[2.040s] copying /home/moon/project/ros2_21/build/learning_launch/build/lib/learning_launch/__init__.py -> /home/moon/project/ros2_21/install/learning_launch/lib/python3.10/site-packages/learning_launch
+[2.040s] byte-compiling /home/moon/project/ros2_21/install/learning_launch/lib/python3.10/site-packages/learning_launch/__init__.py to __init__.cpython-310.pyc
+[2.040s] running install_data
+[2.041s] creating /home/moon/project/ros2_21/install/learning_launch/share/ament_index
+[2.041s] creating /home/moon/project/ros2_21/install/learning_launch/share/ament_index/resource_index
+[2.041s] creating /home/moon/project/ros2_21/install/learning_launch/share/ament_index/resource_index/packages
+[2.041s] copying resource/learning_launch -> /home/moon/project/ros2_21/install/learning_launch/share/ament_index/resource_index/packages
+[2.041s] copying package.xml -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch
+[2.044s] creating /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.044s] copying launch/rviz.launch.py -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.044s] copying launch/namespaces.launch.py -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.044s] copying launch/simple.launch.py -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.044s] copying launch/parameters_yaml.launch.py -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.044s] copying launch/parameters_nonamespace.launch.py -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.045s] copying launch/remapping.launch.py -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.045s] copying launch/parameters.launch.py -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/launch
+[2.045s] creating /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/config
+[2.045s] copying config/turtlesim.yaml -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/config
+[2.045s] creating /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/rviz
+[2.045s] copying rviz/turtle_rviz.rviz -> /home/moon/project/ros2_21/install/learning_launch/share/learning_launch/rviz
+[2.045s] running install_egg_info
+[2.061s] Copying ../build/learning_launch/learning_launch.egg-info to /home/moon/project/ros2_21/install/learning_launch/lib/python3.10/site-packages/learning_launch-0.0.0-py3.10.egg-info
+[2.062s] running install_scripts
+[2.210s] writing list of installed files to '/home/moon/project/ros2_21/build/learning_launch/install.log'
+[2.271s] Invoked command in '/home/moon/project/ros2_21/learning_launch' returned '0': PYTHONPATH=/home/moon/project/ros2_21/build/learning_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_launch build --build-base /home/moon/project/ros2_21/build/learning_launch/build install --record /home/moon/project/ros2_21/build/learning_launch/install.log --single-version-externally-managed install_data

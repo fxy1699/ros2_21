@@ -1,0 +1,41 @@
+[0.729s] Invoking command in '/home/moon/project/ros2_21/learning_action': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/build/learning_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages:/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_action build --build-base /home/moon/project/ros2_21/build/learning_action/build install --record /home/moon/project/ros2_21/build/learning_action/install.log --single-version-externally-managed install_data
+[0.866s] running egg_info
+[0.866s] creating ../build/learning_action/learning_action.egg-info
+[0.874s] writing ../build/learning_action/learning_action.egg-info/PKG-INFO
+[0.874s] writing dependency_links to ../build/learning_action/learning_action.egg-info/dependency_links.txt
+[0.874s] writing entry points to ../build/learning_action/learning_action.egg-info/entry_points.txt
+[0.874s] writing requirements to ../build/learning_action/learning_action.egg-info/requires.txt
+[0.874s] writing top-level names to ../build/learning_action/learning_action.egg-info/top_level.txt
+[0.875s] writing manifest file '../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[0.894s] reading manifest file '../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[0.895s] writing manifest file '../build/learning_action/learning_action.egg-info/SOURCES.txt'
+[0.895s] running build
+[0.895s] running build_py
+[0.895s] creating /home/moon/project/ros2_21/build/learning_action/build
+[0.895s] creating /home/moon/project/ros2_21/build/learning_action/build/lib
+[0.895s] creating /home/moon/project/ros2_21/build/learning_action/build/lib/learning_action
+[0.895s] copying learning_action/action_move_server.py -> /home/moon/project/ros2_21/build/learning_action/build/lib/learning_action
+[0.895s] copying learning_action/action_move_client.py -> /home/moon/project/ros2_21/build/learning_action/build/lib/learning_action
+[0.895s] copying learning_action/__init__.py -> /home/moon/project/ros2_21/build/learning_action/build/lib/learning_action
+[0.896s] running install
+[0.899s] running install_lib
+[0.910s] creating /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action
+[0.910s] copying /home/moon/project/ros2_21/build/learning_action/build/lib/learning_action/action_move_server.py -> /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action
+[0.910s] copying /home/moon/project/ros2_21/build/learning_action/build/lib/learning_action/action_move_client.py -> /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action
+[0.910s] copying /home/moon/project/ros2_21/build/learning_action/build/lib/learning_action/__init__.py -> /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action
+[0.910s] byte-compiling /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action/action_move_server.py to action_move_server.cpython-310.pyc
+[0.911s] byte-compiling /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action/action_move_client.py to action_move_client.cpython-310.pyc
+[0.911s] byte-compiling /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action/__init__.py to __init__.cpython-310.pyc
+[0.911s] running install_data
+[0.911s] creating /home/moon/project/ros2_21/install/learning_action/share/ament_index
+[0.912s] creating /home/moon/project/ros2_21/install/learning_action/share/ament_index/resource_index
+[0.912s] creating /home/moon/project/ros2_21/install/learning_action/share/ament_index/resource_index/packages
+[0.912s] copying resource/learning_action -> /home/moon/project/ros2_21/install/learning_action/share/ament_index/resource_index/packages
+[0.912s] copying package.xml -> /home/moon/project/ros2_21/install/learning_action/share/learning_action
+[0.912s] running install_egg_info
+[0.924s] Copying ../build/learning_action/learning_action.egg-info to /home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages/learning_action-0.0.0-py3.10.egg-info
+[0.924s] running install_scripts
+[1.003s] Installing action_move_client script to /home/moon/project/ros2_21/install/learning_action/lib/learning_action
+[1.003s] Installing action_move_server script to /home/moon/project/ros2_21/install/learning_action/lib/learning_action
+[1.003s] writing list of installed files to '/home/moon/project/ros2_21/build/learning_action/install.log'
+[1.032s] Invoked command in '/home/moon/project/ros2_21/learning_action' returned '0': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/build/learning_action/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/moon/project/ros2_21/install/learning_action/lib/python3.10/site-packages:/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/learning_action build --build-base /home/moon/project/ros2_21/build/learning_action/build install --record /home/moon/project/ros2_21/build/learning_action/install.log --single-version-externally-managed install_data

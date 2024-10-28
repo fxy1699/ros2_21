@@ -1,0 +1,75 @@
+[0.131s] Invoking command in '/home/moon/project/ros2_21/build/learning_action_cpp': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_ros_com:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/px4_ros_com:/home/moon/project/Pixhawkdrone/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/drone:/opt/ros/humble LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/moon/project/ros2_21/learning_action_cpp -DCMAKE_INSTALL_PREFIX=/home/moon/project/ros2_21/install/learning_action_cpp
+[0.259s] -- The C compiler identification is GNU 11.4.0
+[0.259s] -- The CXX compiler identification is GNU 11.4.0
+[0.259s] -- Detecting C compiler ABI info
+[0.275s] -- Detecting C compiler ABI info - done
+[0.279s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.279s] -- Detecting C compile features
+[0.279s] -- Detecting C compile features - done
+[0.281s] -- Detecting CXX compiler ABI info
+[0.339s] -- Detecting CXX compiler ABI info - done
+[0.343s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.343s] -- Detecting CXX compile features
+[0.344s] -- Detecting CXX compile features - done
+[0.345s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.587s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.648s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.675s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.678s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.684s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.691s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.702s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.731s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.733s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.798s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.819s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.852s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.857s] -- Looking for pthread.h
+[0.915s] -- Looking for pthread.h - found
+[0.916s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.969s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.969s] -- Found Threads: TRUE  
+[1.001s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.023s] -- Found learning_interface: 0.0.0 (/home/moon/project/ros2_21/install/learning_interface/share/learning_interface/cmake)
+[1.033s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.085s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.085s] -- Configured cppcheck include dirs: 
+[1.085s] -- Configured cppcheck exclude dirs and/or files: 
+[1.086s] -- Added test 'lint_cmake' to check CMake code style
+[1.086s] -- Added test 'uncrustify' to check C / C++ code style
+[1.086s] -- Configured uncrustify additional arguments: 
+[1.087s] -- Added test 'xmllint' to check XML markup files
+[1.087s] -- Configuring done
+[1.096s] -- Generating done
+[1.097s] -- Build files have been written to: /home/moon/project/ros2_21/build/learning_action_cpp
+[1.104s] Invoked command in '/home/moon/project/ros2_21/build/learning_action_cpp' returned '0': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_ros_com:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/px4_ros_com:/home/moon/project/Pixhawkdrone/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/drone:/opt/ros/humble LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/moon/project/ros2_21/learning_action_cpp -DCMAKE_INSTALL_PREFIX=/home/moon/project/ros2_21/install/learning_action_cpp
+[1.105s] Invoking command in '/home/moon/project/ros2_21/build/learning_action_cpp': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_ros_com:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/px4_ros_com:/home/moon/project/Pixhawkdrone/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/drone:/opt/ros/humble LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moon/project/ros2_21/build/learning_action_cpp -- -j16 -l16
+[1.145s] [ 50%] [32mBuilding CXX object CMakeFiles/action_move_client.dir/src/action_move_client.cpp.o[0m
+[1.145s] [ 50%] [32mBuilding CXX object CMakeFiles/action_move_server.dir/src/action_move_server.cpp.o[0m
+[3.493s] [ 75%] [32m[1mLinking CXX executable action_move_server[0m
+[3.610s] [ 75%] Built target action_move_server
+[3.661s] [100%] [32m[1mLinking CXX executable action_move_client[0m
+[3.773s] [100%] Built target action_move_client
+[3.781s] Invoked command in '/home/moon/project/ros2_21/build/learning_action_cpp' returned '0': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_ros_com:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/px4_ros_com:/home/moon/project/Pixhawkdrone/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/drone:/opt/ros/humble LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/moon/project/ros2_21/build/learning_action_cpp -- -j16 -l16
+[3.808s] Invoking command in '/home/moon/project/ros2_21/build/learning_action_cpp': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_ros_com:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/px4_ros_com:/home/moon/project/Pixhawkdrone/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/drone:/opt/ros/humble LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moon/project/ros2_21/build/learning_action_cpp
+[3.813s] -- Install configuration: ""
+[3.813s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/lib/learning_action_cpp/action_move_server
+[3.814s] -- Set runtime path of "/home/moon/project/ros2_21/install/learning_action_cpp/lib/learning_action_cpp/action_move_server" to ""
+[3.814s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/lib/learning_action_cpp/action_move_client
+[3.814s] -- Set runtime path of "/home/moon/project/ros2_21/install/learning_action_cpp/lib/learning_action_cpp/action_move_client" to ""
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/ament_index/resource_index/package_run_dependencies/learning_action_cpp
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/ament_index/resource_index/parent_prefix_path/learning_action_cpp
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/environment/ament_prefix_path.sh
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/environment/ament_prefix_path.dsv
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/environment/path.sh
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/environment/path.dsv
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/local_setup.bash
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/local_setup.sh
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/local_setup.zsh
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/local_setup.dsv
+[3.815s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/package.dsv
+[3.816s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/ament_index/resource_index/packages/learning_action_cpp
+[3.816s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/cmake/learning_action_cppConfig.cmake
+[3.816s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/cmake/learning_action_cppConfig-version.cmake
+[3.816s] -- Installing: /home/moon/project/ros2_21/install/learning_action_cpp/share/learning_action_cpp/package.xml
+[3.817s] Invoked command in '/home/moon/project/ros2_21/build/learning_action_cpp' returned '0': AMENT_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/moon/project/ros2_21/install/learning_interface:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_ros_com:/home/moon/project/Pixhawkdrone/dev_ws/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/px4_ros_com:/home/moon/project/Pixhawkdrone/install/px4_msgs:/home/moon/project/Pixhawkdrone/install/drone:/opt/ros/humble LD_LIBRARY_PATH=/home/moon/project/ros2_21/install/learning_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/moon/project/ros2_21/install/learning_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/moon/project/ros2_21/build/learning_action_cpp
