@@ -1,16 +1,30 @@
+<!--
+声明了XML文档的版本，并开始一个名为"mbot"的机器人标签。
+xmlns:xacro属性定义了Xacro的命名空间。
+-->
 <?xml version="1.0"?>
 <robot name="mbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- Property List -->
+    <!--
+    定义了一些常量属性，这些属性在Xacro文件中可以被重用。
+    M_PI是圆周率π的近似值，base_radius和base_length分别是机器人基座的半径和长度。
+    -->
     <xacro:property name="M_PI" value="3.1415926"/>
     <xacro:property name="base_radius" value="0.20"/>
     <xacro:property name="base_length" value="0.16"/>
-
+    
+    <!--
+    定义了与轮子相关的属性，包括轮子的半径、长度以及轮子关节在Y和Z轴上的位置。
+    -->
     <xacro:property name="wheel_radius" value="0.06"/>
     <xacro:property name="wheel_length" value="0.025"/>
     <xacro:property name="wheel_joint_y" value="0.19"/>
     <xacro:property name="wheel_joint_z" value="0.05"/>
 
+    <!--
+    定义了与支撑轮（caster）相关的属性，包括支撑轮的半径和支撑轮关节在X轴上的位置。
+    -->
     <xacro:property name="caster_radius"  value="0.015"/> <!-- wheel_radius - ( base_length/2 - wheel_joint_z) -->
     <xacro:property name="caster_joint_x" value="0.18"/>
 
@@ -27,6 +41,10 @@
     
 
     <!-- Macro for robot wheel -->
+    <!--
+    定义了一个名为"wheel"的宏，它接受两个参数：
+    "prefix"用于命名关节和链接，"reflect"用于确定轮子在Y轴上的位置（正或负）。
+    -->
     <xacro:macro name="wheel" params="prefix reflect">
         <joint name="${prefix}_wheel_joint" type="continuous">
             <origin xyz="0 ${reflect*wheel_joint_y} ${-wheel_joint_z}" rpy="0 0 0"/>
@@ -47,6 +65,10 @@
     </xacro:macro>
 
     <!-- Macro for robot caster -->
+    <!--
+    定义了一个名为"caster"的宏，它接受两个参数：
+    "prefix"用于命名关节和链接，"reflect"用于确定支撑轮在X轴上的位置（正或负）。
+    -->
     <xacro:macro name="caster" params="prefix reflect">
         <joint name="${prefix}_caster_joint" type="continuous">
             <origin xyz="${reflect*caster_joint_x} 0 ${-(base_length/2 + caster_radius)}" rpy="0 0 0"/>
@@ -66,6 +88,9 @@
         </link>
     </xacro:macro>
 
+    <!--
+    定义了机器人的基座链接（base_link），这是一个圆柱形的视觉元素。
+    -->
 	<link name="base_link">
 	    <visual>
 			<origin xyz=" 0 0 0" rpy="0 0 0" />
@@ -76,9 +101,15 @@
 	    </visual>
 	</link>
 
+    <!--
+    使用"wheel"宏创建了两个轮子，一个在左边（prefix="left"），一个在右边（prefix="right"）。
+    -->
 	<xacro:wheel prefix="left"  reflect="1"/>
 	<xacro:wheel prefix="right" reflect="-1"/>
 
+    <!--
+    使用"caster"宏创建了两个支撑轮，一个在前面（prefix="front"），一个在后面（prefix="back"）。
+    -->
 	<xacro:caster prefix="front" reflect="-1"/>
 	<xacro:caster prefix="back"  reflect="1"/>
 

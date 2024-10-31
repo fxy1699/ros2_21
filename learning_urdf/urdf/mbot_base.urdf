@@ -1,6 +1,13 @@
+<!--
+    声明了XML文档的版本，并开始一个名为"mbot"的机器人标签。
+-->
 <?xml version="1.0" ?>
 <robot name="mbot">
-
+    <!--
+        定义了机器人的基础链接（base_link），这是一个圆柱形的视觉元素，
+        长度为0.16米，半径为0.20米，位置和姿态的原点为(0, 0, 0)，没有旋转（rpy = 0, 0, 0）。
+        它被赋予了名为"yellow"的材料，颜色为黄色。
+    -->
     <link name="base_link">
         <visual>
             <origin xyz=" 0 0 0" rpy="0 0 0" />
@@ -12,7 +19,11 @@
             </material>
         </visual>
     </link>
-
+    <!--
+        定义了一个名为"left_wheel_joint"的连续关节，它连接基础链接和左轮链接（left_wheel_link）。
+        这个关节允许无限旋转，其原点位于(0, 0.19, -0.05)，没有旋转。
+        关节的旋转轴沿着Y轴。
+    -->
     <joint name="left_wheel_joint" type="continuous">
         <origin xyz="0 0.19 -0.05" rpy="0 0 0"/>
         <parent link="base_link"/>

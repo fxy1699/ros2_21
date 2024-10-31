@@ -2,17 +2,34 @@
 <robot name="mbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- PROPERTY LIST -->
+    <!--
+    定义了一个名为base_mass的属性，值为1，代表机器人底座的质量。
+    定义了一个名为base_radius的属性，值为0.20，代表机器人底座的半径。
+    定义了一个名为base_length的属性，值为0.16，代表机器人底座的长度。
+    -->
     <xacro:property name="M_PI" value="3.1415926"/>
     <xacro:property name="base_mass"   value="1" /> 
     <xacro:property name="base_radius" value="0.20"/>
     <xacro:property name="base_length" value="0.16"/>
 
+    <!--
+    定义了一个名为wheel_mass的属性，值为0.2，代表轮子的质量。
+    定义了一个名为wheel_radius的属性，值为0.06，代表轮子的半径。
+    定义了一个名为wheel_length的属性，值为0.025，代表轮子的长度。
+    定义了一个名为wheel_joint_y的属性，值为0.19，代表轮子关节在Y轴的位置。
+    定义了一个名为wheel_joint_z的属性，值为0.05，代表轮子关节在Z轴的位置。
+    -->
     <xacro:property name="wheel_mass"   value="0.2" />
     <xacro:property name="wheel_radius" value="0.06"/>
     <xacro:property name="wheel_length" value="0.025"/>
     <xacro:property name="wheel_joint_y" value="0.19"/>
     <xacro:property name="wheel_joint_z" value="0.05"/>
 
+    <!--
+    定义了一个名为caster_mass的属性，值为0.2，代表脚轮的质量。
+    定义了一个名为caster_radius的属性，值为0.015，代表脚轮的半径，注释中说明了这个值是如何计算的。
+    定义了一个名为caster_joint_x的属性，值为0.18，代表脚轮关节在X轴的位置。
+    -->
     <xacro:property name="caster_mass"    value="0.2" /> 
     <xacro:property name="caster_radius"  value="0.015"/> <!-- wheel_radius - ( base_length/2 - wheel_joint_z) -->
     <xacro:property name="caster_joint_x" value="0.18"/>
@@ -29,6 +46,13 @@
     </material>
     
     <!-- Macro for inertia matrix -->
+    <!--
+    定义了两个宏，分别用于计算球体和圆柱体的惯性矩阵。
+    定义了一个名为sphere_inertial_matrix的宏，参数为质量m和半径r，用于计算球体的惯性矩阵。
+    在sphere_inertial_matrix宏中定义了惯性元素，包括质量mass和惯性矩inertia。
+    定义了一个名为cylinder_inertial_matrix的宏，参数为质量m、半径r和高度h，用于计算圆柱体的惯性矩阵。
+    在cylinder_inertial_matrix宏中定义了惯性元素，包括质量mass和惯性矩inertia。
+    -->
     <xacro:macro name="sphere_inertial_matrix" params="m r">
         <inertial>
             <mass value="${m}" />
@@ -48,6 +72,11 @@
     </xacro:macro>
 
     <!-- Macro for robot wheel -->
+    <!--
+    定义了一个名为wheel的宏，参数为前缀prefix和反射值reflect，用于创建机器人的轮子。
+    在wheel宏中定义了一个连续型关节joint，用于连接轮子和底座。
+    定义了一个名为${prefix}_wheel_link的链接link，包含了视觉visual、碰撞collision和惯性inertial元素。
+    -->
     <xacro:macro name="wheel" params="prefix reflect">
         <joint name="${prefix}_wheel_joint" type="continuous">
             <origin xyz="0 ${reflect*wheel_joint_y} ${-wheel_joint_z}" rpy="0 0 0"/>
@@ -73,6 +102,9 @@
             <xacro:cylinder_inertial_matrix  m="${wheel_mass}" r="${wheel_radius}" h="${wheel_length}" />
         </link>
 
+        <!--
+        定义了Gazebo仿真中轮子的材质和摩擦系数。
+        -->
         <gazebo reference="${prefix}_wheel_link">
             <material>Gazebo/Gray</material>
             <mu1>100000.0</mu1>
@@ -80,6 +112,9 @@
         </gazebo>
 
         <!-- Transmission is important to link the joints and the controller -->
+        <!--
+        定义了轮子关节的传输transmission，用于连接关节和控制器。
+        -->
         <transmission name="${prefix}_wheel_joint_trans">
             <type>transmission_interface/SimpleTransmission</type>
             <joint name="${prefix}_wheel_joint" >
@@ -116,7 +151,9 @@
             </collision>      
             <xacro:sphere_inertial_matrix  m="${caster_mass}" r="${caster_radius}" />
         </link>
-
+        <!--
+        定义了Gazebo仿真中基座的重力设置。
+        -->
         <gazebo reference="${prefix}_caster_link">
             <material>Gazebo/Black</material>
         </gazebo>
@@ -169,23 +206,66 @@
         <xacro:caster prefix="back"  reflect="1"/>
 
         <!-- controller -->
+        <!--
+        在mbot_base_gazebo宏中定义了一个Gazebo插件，用于控制差动驱动。
+        -->
         <gazebo>
+            <!--
+            name: 插件的名称，这里为differential_drive_controller。
+            filename: 插件的文件名，这里为libgazebo_ros_diff_drive.so，这是ROS中用于差动驱动控制器的插件。
+            -->
             <plugin name="differential_drive_controller" 
                     filename="libgazebo_ros_diff_drive.so">                
                   <update_rate>30</update_rate>
                   <left_joint>left_wheel_joint</left_joint>
                   <right_joint>right_wheel_joint</right_joint>
+                  <!--
+                  wheel_separation: 两个轮子中心之间的距离。这里使用wheel_joint_y的两倍来计算。
+                  -->
                   <wheel_separation>${wheel_joint_y*2}</wheel_separation>
+                  <!--
+                  wheel_diameter: 轮子的直径。这里设置为轮子半径的两倍。
+                  -->
                   <wheel_diameter>${2*wheel_radius}</wheel_diameter>
+                  <!--
+                  max_wheel_torque: 轮子可以施加的最大扭矩。
+                  -->
                   <max_wheel_torque>20</max_wheel_torque>
+                  <!--
+                  max_wheel_acceleration: 轮子可以达到的最大加速度。
+                  -->
                   <max_wheel_acceleration>1.0</max_wheel_acceleration>
+                  <!--
+                  command_topic: 发送到该主题的命令将被控制器接收。这里设置为cmd_vel，这是ROS中常用的速度命令主题。
+                  -->
                   <command_topic>cmd_vel</command_topic>
+                  <!--
+                  publish_odom: 是否发布里程计（odometry）信息。这里设置为true，表示会发布。
+                  -->
                   <publish_odom>true</publish_odom>
+                  <!--
+                  publish_odom_tf: 是否发布里程计的TF（Transform）信息。这里设置为true。
+                  -->
                   <publish_odom_tf>true</publish_odom_tf>
+                  <!--
+                  publish_wheel_tf: 是否发布轮子的TF信息。这里设置为true。
+                  -->
                   <publish_wheel_tf>true</publish_wheel_tf>
+                  <!--
+                  odometry_topic: 发布里程计信息的主题名称。这里设置为odom。
+                  -->
                   <odometry_topic>odom</odometry_topic>
+                  <!--
+                  odometry_frame: 里程计信息发布的参考坐标系名称。这里设置为odom。
+                  -->
                   <odometry_frame>odom</odometry_frame>
+                  <!--
+                  robot_base_frame: 机器人基座的参考坐标系名称。这里设置为base_footprint。
+                  -->
                   <robot_base_frame>base_footprint</robot_base_frame>
+                  <!--
+                  odometry_source: 指定里程计信息的来源。1表示使用硬件接口读取的编码器值。 
+                  -->
                   <odometry_source>1</odometry_source>
             </plugin>
         </gazebo> 
